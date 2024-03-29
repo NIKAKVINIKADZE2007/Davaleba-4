@@ -46,6 +46,29 @@ header {
   display: grid;
   margin: 0 auto;
 }
+
+.Superviserdiv {
+  border-top: 4px solid var(--var-borderColorCyia);
+}
+
+.Teambuilderdiv {
+  border-top: 4px solid var(--var-borderColorRed);
+}
+.Karmadiv {
+  border-top: 4px solid var(--var-borderColorOrange);
+}
+.calculator {
+  border-top: 4px solid var(--var-borderColorBlue);
+}
+.div-header {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.lowerText {
+  font-size: 1.3rem;
+}
+
 @media screen and (min-width: 375px) {
   header {
     margin: 80px 0px 64px 0px;
@@ -79,56 +102,55 @@ header {
   }
   .div-header {
     margin-top: 32px;
-    font-size: 2rem;
-    font-weight: 600;
   }
   .lowerText {
     width: 286px;
     height: 46px;
-    font-size: 1.3rem;
     margin-top: 6px;
   }
   .Superviserdiv {
     grid-column: 1;
     grid-row: 2/4;
-    border-top: 4px solid var(--var-borderColorCyia);
   }
   .Teambuilderdiv {
     grid-row: 1;
     grid-column: 2;
-    border-top: 4px solid var(--var-borderColorRed);
   }
   .Karmadiv {
     grid-row: 4;
     grid-column: 2;
-    border-top: 4px solid var(--var-borderColorOrange);
   }
   .calculator {
     grid-row: 2/4;
     grid-column: 3;
-    border-top: 4px solid var(--var-borderColorBlue);
   }
 }
-@media screen and (max-width: 374) {
+@media screen and (max-width: 374px) {
   header h2 {
     font-size: 1.8rem;
   }
   .main-container {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    margin-top: 103px;
     grid-gap: 50px 10px;
     justify-content: center;
   }
-  .Superviserdiv {
-    border-top: 4px solid var(--var-borderColorCyia);
+  .main-container div {
+    width: 311px;
+    height: 222px;
+    border-radius: 8px;
+    background-color: white;
+    position: relative;
   }
-
-  .Teambuilderdiv {
-    border-top: 4px solid var(--var-borderColorRed);
+  .main-container img {
+    position: absolute;
+    bottom: 28px;
+    right: 28px;
   }
-  .Karmadiv {
-    border-top: 4px solid var(--var-borderColorOrange);
+  .main-container div p {
+    margin-left: 28px;
   }
-  .calculator {
-    border-top: 4px solid var(--var-borderColorBlue);
+  .div-header {
+    margin-top: 27px;
   }
 }
