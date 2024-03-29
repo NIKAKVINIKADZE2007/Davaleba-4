@@ -5,6 +5,7 @@
 }
 :root {
   --main-color: #4d4f62;
+  --var-borderColorRed: #ea5454;
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -31,9 +32,47 @@ header {
   margin-top: 16px;
   color: var(--main-color);
 }
+.main-div {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main-div div {
+  border-radius: 8px;
+  position: relative;
+  background-color: #ffffff;
+}
 @media screen and (min-width: 375px) {
+  header {
+    margin: 80px 0px 64px 0px;
+  }
   header h2 {
     font-size: 3.6rem;
+  }
+  .main-div p {
+    margin-left: 32px;
+  }
+  .main-div {
+    width: 1110px;
+    height: 530px;
+  }
+  .catagory-name {
+    font-size: 2rem;
+    color: var(--main-color);
+    font-weight: 600;
+    margin: 32px 0px 6px 0px;
+  }
+  .main-div div {
+    width: 350px;
+    height: 250px;
+    border-top-width: 4px;
+    border-top: 4px solid var(--var-borderColorRed);
+  }
+  .main-div img {
+    position: absolute;
+    bottom: 28px;
+    right: 28px;
   }
 }
 @media screen and (max-width: 374) {
